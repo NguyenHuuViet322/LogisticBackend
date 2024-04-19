@@ -1,0 +1,49 @@
+﻿  instance.cpp
+  main.cpp
+  solution.cpp
+E:\repos\Logistics_test\solution.cpp(240,51): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+E:\repos\Logistics_test\solution.cpp(620,25): warning C4244: '=': conversion from '__int64' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+E:\repos\Logistics_test\solution.cpp(628,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\repos\Logistics_test\solution.cpp(659,55): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  solver.cpp
+E:\repos\Logistics_test\solver.cpp(104,28): warning C4244: 'initializing': conversion from '_Rep' to 'double', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+E:\repos\Logistics_test\solver.cpp(183,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(189,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(250,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(274,56): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(276,69): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(301,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(307,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(412,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(479,17): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(484,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(488,49): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+E:\repos\Logistics_test\solver.cpp(502,5): warning C4102: 'nodrone': unreferenced label
+E:\repos\Logistics_test\solver.cpp(650,80): warning C4244: '=': conversion from '_Rep' to 'double', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  utils.cpp
+E:\repos\Logistics_test\utils.cpp(61,29): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1494 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Logistics_test.vcxproj -> E:\repos\Logistics_test\x64\Release\Logistics_test.exe

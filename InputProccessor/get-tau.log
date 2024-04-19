@@ -1,0 +1,7 @@
+﻿  main.cpp
+E:\repos\get-tau\config.h(107,81): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  get-tau.vcxproj -> E:\repos\get-tau\x64\Debug\get-tau.exe
