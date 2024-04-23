@@ -1,5 +1,5 @@
 numNode  10
-numDrone 3
+numDrone 2
 # DRONE FLIGHT TIME
 request_id   tau_in  tau_out
          1        5        5

@@ -90,7 +90,7 @@ func InputProccessor(w http.ResponseWriter, r *http.Request) {
 	var result []Result
 
 	result = make([]Result, numDrone+1)
-	methodList := OutputProccess(numDrone)
+	methodList := OutputProccess(numDrone, userProfile)
 	log.Println(methodList)
 	for index, method := range methodList {
 		var tmp Result
@@ -148,7 +148,7 @@ func Proccessing(numDrone int) {
 
 }
 
-func OutputProccess(numDrone int) []string {
+func OutputProccess(numDrone int, userProfile []UserProfile) []string {
 	var methodList []string
 	var drone []string
 	var truck []string
@@ -164,10 +164,34 @@ func OutputProccess(numDrone int) []string {
 		if strings.Contains(line, "D") {
 			drone = strings.Split(line, " ")
 			drone[0] = getLastString(drone[0])
+			for i, t := range drone {
+				if t != "0" {
+					index, err := strconv.Atoi(t)
+
+					if err != nil {
+
+					}
+					drone[i] = userProfile[index+1].Id
+				}
+
+			}
 		}
 		if strings.Contains(line, "T") {
 			truck = strings.Split(line, " ")
 			truck[0] = getLastString(truck[0])
+
+			for i, t := range truck {
+				if t != "0" {
+					index, err := strconv.Atoi(t)
+
+					if err != nil {
+
+					}
+					log.Println(index, " ", userProfile[index+1])
+					truck[i] = userProfile[index+1].Id
+				}
+
+			}
 		}
 	}
 	methodList = make([]string, numDrone+1)
